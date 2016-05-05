@@ -45,7 +45,16 @@ public class Problem2_2_13 {
         //reverse the second part
         ListNode p1=head,p2=slow.next;
         slow.next=null;
-        ListNode index=p2.next,r=p2;
+        ListNode index=p2.next,r;
+        r=index.next;
+        while(index!=null){
+            index.next=p2;
+            p2.next=null;
+
+            p2=index;
+            index=r;
+            r=r.next;
+        }
 
 
         return null;
