@@ -13,7 +13,7 @@ public class Problem2_1_17 {
     public static void main(String[] args) {
         Problem2_1_17 problem=new Problem2_1_17();
 
-        int[] array=problem.plusOne(new int[]{1,2,9});
+        int[] array=problem.plusOne(new int[]{9,9,9});
         for(int a:array){
             System.out.println(a);
         }
@@ -37,11 +37,18 @@ public class Problem2_1_17 {
 
         }
 
-        if(carry==1){
-            LinkedList<Integer> linkedList=new LinkedList<Integer>();
+        int[] newDigits;
 
+        if(carry==1){
+            newDigits=new int[digits.length+1];
+            newDigits[0]=1;
+            for(int i=0;i<digits.length;++i){
+                newDigits[i+1]=digits[i];
+            }
+        }else{
+            newDigits=digits;
         }
 
-        return digits;
+        return newDigits;
     }
 }
