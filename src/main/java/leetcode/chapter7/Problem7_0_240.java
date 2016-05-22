@@ -22,36 +22,6 @@ public class Problem7_0_240 {
             }
         }
 
-        if (col == 0) {
-            int i=0,j=row;
-            while (i <= j) {
-                int mid=(i+j)/2;
-                if(matrix[mid][0]==target)
-                    return true;
-
-                if (target < matrix[mid][0]) {
-                    j = mid - 1;
-                } else {
-                    i=mid+1;
-                }
-            }
-        }
-
-        if (row == (matrix.length - 1)) {
-            int i=0,j=row;
-            while (i <= j) {
-                int mid=(i+j)/2;
-                if(matrix[row][mid]==target)
-                    return true;
-
-                if (target < matrix[row][mid]) {
-                    j = mid - 1;
-                } else {
-                    i=mid+1;
-                }
-            }
-        }
-
         return false;
     }
 
