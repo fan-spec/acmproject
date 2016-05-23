@@ -3,7 +3,7 @@ package leetcode.chapter13;
 /**
  * Created by Y on 2016-05-22.
  */
-public class Problem53 {
+public class Problem53 {    //not completed
 
     public static void main(String[] args) {
         System.out.println(new Problem53().maxSubArray(new int[]{-4,-2,-3,-1}));
