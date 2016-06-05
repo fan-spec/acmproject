@@ -12,9 +12,7 @@ public class Test {
     public static void main(String[] args) {
         Test test=new Test();
 
-        System.out.println("123".substring(0,0));
-        System.out.println("123".substring(0,1));
-        System.out.println("123".substring(2,2));
+        Math.max(1,2);
 
     }
 

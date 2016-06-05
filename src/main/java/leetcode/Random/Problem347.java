@@ -1,4 +1,4 @@
-package leetcode.chapter0;
+package leetcode.Random;
 
 
 import java.util.HashMap;

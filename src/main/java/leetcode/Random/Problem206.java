@@ -1,4 +1,4 @@
-package leetcode.chapter0;
+package leetcode.Random;
 
 /**
  * Created by Y on 2016-05-20.
